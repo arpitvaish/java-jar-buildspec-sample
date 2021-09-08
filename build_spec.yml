@@ -20,7 +20,6 @@ steps:
     timeoutInSeconds: 400
     name: "Create Jar File"
     command: |
-      cd 
       cd  src/com/sample/
       jar cf build_jar.jar Main.java
     onFailure:
