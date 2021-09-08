@@ -31,4 +31,4 @@ steps:
 outputArtifacts:
   - name: build_jar
     type: BINARY
-    location: build_jar
+    location: target/app.jar
