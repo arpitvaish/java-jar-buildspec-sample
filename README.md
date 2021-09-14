@@ -94,6 +94,5 @@ Use the Manual Run button to start a Build Run
 
 Manual Run will use the Primary Code Repository, will start the Build Pipeline, first running the Managed Build stage, followed by the Deliver Artifacts stage.
 
-After the Build Pipeline execution is complete, we can view the jar file stored in the OCI Artifact Registry, which can then be pulled to local workspace (Under ```Actions``` , choose ``` Copy Pull Command```).
-
+After the Build Pipeline execution is complete, we can view the jar file stored in the OCI Artifact Registry, which can then be download to local workspace. 
 
