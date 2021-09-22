@@ -17,6 +17,20 @@ steps:
         timeoutInSeconds: 400
         runAs: root
   - type: Command
+    name: "Install curl"
+    timeoutInSeconds: 4000
+    command: |
+      yum install -y java-15-openjdk-devel
+      JAVA_15=$(alternatives --display java | grep 'family java-15-openjdk' | cut -d' ' -f1)
+      alternatives --set java $JAVA_15
+      docker save iad.ocir.io/id204we8d65n/balaregistry/hello-bala:1.0 -o docker-image.tar
+      java -version
+  - type: Command
+    name: "Second step"
+    timeoutInSeconds: 4000
+    command: |
+      java -version        
+  - type: Command
     timeoutInSeconds: 400
     name: "Create Jar File"
     command: |
