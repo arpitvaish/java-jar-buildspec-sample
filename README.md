@@ -4,7 +4,7 @@ This is an example Hello World project using Java SE JDK 11 and creating a jar f
 
 In this example, We'll build a jar file of this Java Hello World app, and store your built file in the OCI Artifact Registry,  all using the OCI DevOps service!
 
-Let's go!
+Let's go!!
 
 ## Building the application locally
 
